@@ -1,0 +1,47 @@
+4. Search Functionality
+Question: Create a Product class with attributes productId, productName, and price. Then, create a Store class that contains an array of Product objects. Implement a method in the Store class to find and return a Product by its productName.
+Objective: Learn how to search for an object in an array based on a specific attribute value.
+
+
+Explanation of the Problem:
+Product Class:
+
+You'll create a Product class with attributes like productId, productName, and price.
+The class will have a constructor to initialize these attributes.
+You’ll also need getter methods to access these attributes.
+Store Class:
+
+This class will have an array of Product objects to represent the store's inventory.
+You’ll implement a method that takes a productName as a parameter and searches through the array of Product objects to find a match.
+If a product with the specified name is found, the method will return that Product object; otherwise, it can return null or an appropriate message indicating that the product was not found.
+Objective:
+
+The goal is to practice searching for an object within an array based on one of its attributes (productName in this case). This helps in understanding how to iterate over an array of objects and compare attribute values.
+How to Approach It:
+Define the Product Class:
+
+Include attributes like productId, productName, and price.
+Write a constructor to initialize these attributes.
+Add getter methods to retrieve the values of these attributes.
+Define the Store Class:
+
+Declare an array of Product objects.
+Implement a method like findProductByName(String productName) that iterates over the array and checks each Product object's productName.
+Return the Product object if found or null/message if not found.
+Testing:
+
+In the main method, create a few Product objects and store them in the Store.
+Call the search method with various product names to test if it correctly identifies and returns the desired Product.
+Roadmap:
+Create the Product Class:
+
+Define attributes.
+Implement constructor and getter methods.
+Create the Store Class:
+
+Define an array of Product objects.
+Implement the search method.
+Test the Search Functionality:
+
+Populate the store with products.
+Test the search by calling the method with different product names.

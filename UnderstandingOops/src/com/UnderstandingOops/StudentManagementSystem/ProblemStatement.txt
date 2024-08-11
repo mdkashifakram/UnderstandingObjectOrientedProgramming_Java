@@ -1,0 +1,57 @@
+
+Absolutely! Here’s a similar question to practice your understanding of class interaction and array management:
+
+Practice Question: School Management System
+Question:
+
+Create a Student class with the following attributes:
+
+id (int)
+name (String)
+grade (double)
+Implement the following methods in the Student class:
+
+getId(): Returns the ID of the student.
+getName(): Returns the name of the student.
+getGrade(): Returns the grade of the student.
+Create a Classroom class with the following attributes:
+
+className (String)
+students (Student array)
+numStudents (int)
+Implement the following methods in the Classroom class:
+
+addStudent(Student student): Adds a student to the classroom.
+getAverageGrade(): Returns the average grade of all students in the classroom.
+getTopStudent(): Returns the Student object with the highest grade in the classroom.
+
+In the main method, use a Scanner object to read the values for the classroom name, 
+the number of students, and the student details (id, name, and grade) in a loop. 
+Once all student details have been read, create a Classroom object with the appropriate parameters. 
+Finally, call the methods to get the average grade and the top student, and print the results.
+
+
+SAMPLE INPUT:
+
+Enter classroom name: Math 101
+Enter number of students: 3
+Enter student details:
+Student 1:
+Enter id: 1
+Enter name: Alice
+Enter grade: 85.5
+Student 2:
+Enter id: 2
+Enter name: Bob
+Enter grade: 92.0
+Student 3:
+Enter id: 3
+Enter name: Charlie
+Enter grade: 78.0
+
+
+
+SAMPLE OUTPUT:
+
+Average grade: 85.83
+Top student: Bob with grade 92.0
