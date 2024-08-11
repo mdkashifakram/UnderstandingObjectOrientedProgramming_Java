@@ -1,0 +1,10 @@
+5. Aggregation of Data
+
+Question: Create a Team class that contains an array of Player objects, 
+where each Player has attributes like playerName and score. 
+Implement a method in the Team class to calculate the total 
+score of all players and return the highest score.
+
+
+Objective: Practice aggregating data from multiple objects and 
+performing operations like summing or finding maximum values.
