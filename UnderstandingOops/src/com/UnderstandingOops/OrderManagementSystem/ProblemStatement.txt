@@ -1,0 +1,10 @@
+10. Calculation Across Objects
+Question: Create an Order class with attributes orderId, product, quantity, and pricePerUnit. Implement a method to calculate the total price for the order. Then, create a Customer class that has an array of Order objects and a method to calculate the total amount spent by the customer.
+Objective: Practice performing calculations across multiple objects and understanding how classes can be designed to model real-world scenarios.
+
+
+
+Order Class: This class will have the attributes orderId, product, quantity, and pricePerUnit. It will also have a method to calculate the total price for the order.
+
+Customer Class: This class will have a list of Order objects and a method to calculate the total amount spent by the customer.
+

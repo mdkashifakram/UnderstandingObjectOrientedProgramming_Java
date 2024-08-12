@@ -1,58 +1,53 @@
 package com.UnderstandingOops.PlayerFunction;
-
 import java.util.Scanner;
 
 public class Team {
-	private Player[] players;
-	private int playerCount;
-	
+	Player[] players;
+	int countPlayer;
 	public Team(int capacity) {
 		players=new Player[capacity];
-		playerCount=0;
-				
+		countPlayer=0;
+	}
+	public void addPlayers(Player player) {
+		if(countPlayer<players.length) {
+			players[countPlayer++]=player;
+		}
 	}
 
-	public void addPlayer(Player player) {
-		if(playerCount<players.length) {
-			players[playerCount++]=player;
+	public int getTotalMarks() {
+		int fullmarks=0;
+		for(int i=0;i<countPlayer;i++) {
+			fullmarks+=players[i].getScore();
 		}
-		else {
-			System.out.println("No more players can be added to the team");
-		}
+		return fullmarks;
 	}
-	public int getTotalScore() {
-		int scoreCount=0;
-		for(int i=0;i<playerCount;i++) {
-			scoreCount+=players[i].getScore();
-		}
-		return scoreCount;
-	}
-	public int getHighestScore() {
-		int highestScore=0;
-		for(int i=0;i<playerCount;i++) {
-			if(players[i].getScore()>highestScore) {
-			highestScore=players[i].getScore();	
+	public int getHighestMarks() {
+		int highestmarks=0;
+		for(int i=0;i<countPlayer;i++) {
+			if(players[i].getScore()>highestmarks) {
+				highestmarks=players[i].getScore();
 			}
 		}
-		return highestScore;
+		return highestmarks;
 	}
-	
 	
 	
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
 		Team team=new Team(5);
-		Player p1=new Player("Kashif",40);
-		Player p2=new Player("Jhon",120);
-		Player p3=new Player("Alice",40);
-		Player p4=new Player("Akram",20);
 		
-		team.addPlayer(p1);
-		team.addPlayer(p2);
-		team.addPlayer(p3);
-		team.addPlayer(p4);
-		System.out.println("Total Score of the team : "+team.getTotalScore());
-		System.out.println("Highest score is  : "+team.getHighestScore());
-	}
+		Player p1=new Player("Kashif",10);
+		Player p2=new Player("Sam",20);
+		Player p3=new Player("Tista",30);
+		Player p4=new Player("Sajid",40);
+		Player p5=new Player("Akram",35);
+		team.addPlayers(p1);
+		team.addPlayers(p2);
+		team.addPlayers(p3);
+		team.addPlayers(p4);
+		team.addPlayers(p5);
+		
+		System.out.println("The Total Marks of the team is : "+team.getTotalMarks());
+		System.out.println("The highest marks among the players: "+team.getHighestMarks());
+		}
 
 }

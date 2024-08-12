@@ -8,8 +8,6 @@ public class Classroom {
 	private int numStudents;
 
 	
-
-	
 	public Classroom(String className, Student[] students, int numStudents) {
 		this.className = className;
 		this.students = students;

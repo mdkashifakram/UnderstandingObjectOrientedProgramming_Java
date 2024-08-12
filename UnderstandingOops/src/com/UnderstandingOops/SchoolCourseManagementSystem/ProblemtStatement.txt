@@ -1,0 +1,5 @@
+8. Filtering Objects
+Question: Create a Course class with attributes courseName, instructor, and duration. 
+Then, create a School class that contains an array of Course objects. 
+Implement a method in the School class to return all courses taught by a specific instructor.
+Objective: Practice filtering objects based on specific criteria.

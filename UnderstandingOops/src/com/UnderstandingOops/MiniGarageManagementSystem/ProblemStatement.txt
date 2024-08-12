@@ -1,0 +1,26 @@
+6. Working with Multiple Classes
+Question: Create a Car class with attributes like make, model, and price. Then, create a Garage class that can store multiple Car objects. Implement methods in the Garage class to add a car, remove a car, and find the most expensive car in the garage.
+Objective: Get comfortable working with multiple classes, managing objects, and implementing common operations.
+
+
+Problem Statement:
+Create a Car class with attributes such as make, model, and price. Then, create a Garage class that can store multiple Car objects. Implement methods in the Garage class to:
+
+Add a car to the garage.
+Remove a car from the garage.
+Find the most expensive car in the garage.
+Objective:
+Learn how to work with multiple classes, manage collections of objects, and implement common operations like adding, removing, and finding elements.
+Implementation Outline:
+Car Class:
+
+Attributes: make, model, and price.
+Constructor to initialize these attributes.
+Getter methods to access the attributes.
+Garage Class:
+
+An array or a list of Car objects.
+Methods to:
+Add a car to the collection.
+Remove a car from the collection by a unique identifier or index.
+Find the most expensive car by comparing the prices.
